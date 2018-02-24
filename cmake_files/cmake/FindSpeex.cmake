@@ -139,7 +139,8 @@ message(STATUS "spx_lib_dir---> ${SPEEX_LIB_DIRS}")
 
     find_library(SPEEXDSP_LIB
       NAMES
-        libspeexdsp.lib
+        libspeex.lib
+#        libspeexdsp.lib
       HINTS
         ${SPEEX_DIR}/lib
         ${SPEEX_DIR}/lib/${VC_DIR}

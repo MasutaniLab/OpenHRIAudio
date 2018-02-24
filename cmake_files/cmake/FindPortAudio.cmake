@@ -124,6 +124,7 @@ message(STATUS "------->>>${PORTAUDIO_DIR}")
     find_library(PORTAUDIO_LIB
       NAMES
         portaudio_x86.lib
+        portaudio_x64.lib
       HINTS
         ${PORTAUDIO_DIR}/lib
         ${PORTAUDIO_DIR}/lib/*
@@ -134,6 +135,7 @@ message(STATUS "------->>>${PORTAUDIO_DIR}")
     find_path(PORTAUDIO_LIB_DIR
       NAMES
         portaudio_x86.lib
+        portaudio_x64.lib
       HINTS
         ${PORTAUDIO_DIR}/lib
         ${PORTAUDIO_DIR}/lib/*
