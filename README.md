@@ -41,9 +41,10 @@
     ADD_DEFINITIONS(-DPA_WDMKS_NO_KSGUID_LIB)
   endif(PA_WDMKS_NO_KSGUID_LIB)
   ~~~
-- [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
-  提供されているビルド用バッチファイルをVS2015 64bitで使えるように改良したもの[`forPortaudio/build_portaudio.bat`](forPortaudio/build_portaudio.bat)を
+- [`forPortaudio\build_portaudio.bat`](forPortaudio/build_portaudio.bat)を
   ディレクトリ`A\portaudio`にコピー．
+  - [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
+    提供されているビルド用バッチファイルをVS2015 64bitで使えるように改良したもの
 - コマンドプロンプトで以下を実行．
   ~~~
   cd A\portaudio
@@ -61,11 +62,12 @@
   ~~~
   tar xvfz speex-1.2rc1.tar.gz
   ~~~
-- [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
-  提供されているビルド用バッチファイルをVS2015 64bitで使えるように改良したもの
-  [`forSpeex/build_speex.bat`](forSpeex/build_speex.bat)をディレクトリ`A\speex-1.2rc1`にコピー．
-- [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
-  提供されている`CMakeList_speex.txt`を`A\speex-1.2rc1`にコピーして，ファイル名を`CMakeList.txt`に変更．
+- [`forSpeex\build_speex.bat`](forSpeex/build_speex.bat)をディレクトリ`A\speex-1.2rc1`にコピー．
+  - [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
+    提供されているビルド用バッチファイルをVS2015 64bitで使えるように改良したもの．  
+- [`forSpeex\CMakeList.txt`](forSpeex/CMakeList.txt)を`A\speex-1.2rc1`にコピー．
+  - [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
+    `CMakeList_speex.txt`として提供されているものと同じ．
 - コマンドプロンプトで以下を実行．
   ~~~
   cd A\speex-1.2rc1
@@ -80,12 +82,13 @@
 - [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)の
   libresampleのソースコードへのリンクは切れており，所在がはっきりしない．
 - https://github.com/minorninth/libresample これか？
-- 以上からディレクト`A`の下にGitクローン．ディレクトリ`libresample`ができる．
-- [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
-  提供されているビルド用バッチファイルをVS2015 64bitで使えるように改良したもの
-  [`forResample/build_libresample.bat`](forResample/build_libresample.bat)をディレクトリ`A\libresample`にコピー．
-- [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
-  提供されている`CMakeLists_resample.txt`を`A\libresample`にコピーして，ファイル名を`CMakeList.txt`に変更．
+- 上記URLからディレクト`A`の下にGitクローン．ディレクトリ`libresample`ができる．
+- [`forResample\build_libresample.bat`](forResample/build_libresample.bat)をディレクトリ`A\libresample`にコピー．
+  - [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
+    提供されているビルド用バッチファイルをVS2015 64bitで使えるように改良したもの  
+- [`forResample\CMakeList.txt`](forResample/CMakeList.txt)をディレクトリ`A\libresample`にコピー．
+  - [参考ページ](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)で
+    `CMakeLists_resample.txt`として提供されているものと同じ．
 - コマンドプロンプトで以下を実行．
   ~~~
   cd A\libresample
