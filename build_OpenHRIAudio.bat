@@ -116,9 +116,9 @@ goto CP_ESSENTIALS
 
 :CP_ESSENTIALS
 cd ..
-@rem copy %PORTAUDIO_DIR%\lib\ .\bin
+copy %PORTAUDIO_DIR%\lib\ .\bin
 
-copy %HRI_ESSENTIALS_DIR%\*.* .\bin
+@rem copy %HRI_ESSENTIALS_DIR%\*.* .\bin
 
 goto END
 
