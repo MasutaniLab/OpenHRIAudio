@@ -1,5 +1,11 @@
 # OpenHRIAudio をVS2015 64bitでビルドする試み
 
+## 注意
+
+- このリポジトリを作った後に参考にしたページの新版ができていることを知る．
+  どうするか検討中．
+  - 新版 [OpenHRIAudioをWindowsでビルドする](http://openrtc.org/_default/ja/HRI/OpenHRIAudio%E3%82%92Windows%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E3%81%99%E3%82%8B.html)
+
 ## 参考
 - [OpenRTCのOpenHRIAudioのForCMakeブランチ](https://github.com/openrtc/OpenHRIAudio)
 - [OpenHRIAudioをWindowsでビルドする](http://openrtc.org/OpenHRI/build/OpenHRIAudio_windows.html)
